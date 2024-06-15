@@ -24,7 +24,7 @@ To run the Social-Media React App locally on your machine, follow these steps:
    git clone <repository-url>
 2. **Navigate to the project directory:**
    ```bash
-   cd postshare-react-app
+   cd social-media
 3. **Install dependencies:**
    ```bash
    npm install
@@ -46,14 +46,11 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 4. Push your changes to your fork.
 5. Submit a pull request to the main branch of the original repository.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgements
 This app was created as a part of learning React and Firebase.
 Special thanks to the React and Firebase communities for their helpful resources and documentation.
 
 ## Contact
-For any inquiries or support, please email us at your-avinashkumarmehta2002@gmail.com.
+For any inquiries or support, please email us at -avinashkumarmehta2002@gmail.com.
 
 Thank you for using the Social-Media React App! We hope you enjoy sharing and discovering new posts with the community.
