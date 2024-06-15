@@ -36,7 +36,7 @@ To run the Social-Media React App locally on your machine, follow these steps:
 7. **Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app.**
 
 ## Firebase Deployment
-The Social-Media React App is also deployed on Firebase. You can access the live version of the app at the following URL: [PostShare App](https://example.com)
+The Social-Media React App is also deployed on Firebase. You can access the live version of the app at the following URL: social-media-a11b8.web.app
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
