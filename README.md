@@ -37,7 +37,7 @@ To run the Social-Media React App locally on your machine, follow these steps:
 
 ## Firebase Deployment
 The Social-Media React App is also deployed on Firebase. You can access the live version of the app at the following URL: [social-media-a11b8.web.app
-](https://social-media-a11b8.web.app/)
+](https://social-media-cdbad.web.app/)
 ## Contributing
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 1. Fork the repository.
