@@ -1,8 +1,9 @@
-import { addDoc, getDocs, collection, query, where,deleteDoc,doc } from 'firebase/firestore';
+import { addDoc, getDocs, collection, query, where, deleteDoc, doc } from 'firebase/firestore';
 import { db, auth } from "../../config/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useState, useEffect } from 'react';
 import '../../App.css';
+
 export const Post = ({ post, deletePost }) => {
     const [user] = useAuthState(auth);
     const [likes, setLikes] = useState([]);
@@ -11,8 +12,10 @@ export const Post = ({ post, deletePost }) => {
     const likesDoc = query(likesRef, where("postId", "==", post.id));
 
     const getLikes = async () => {
-        const data = await getDocs(likesDoc);
-        setLikes(data.docs.map((doc) => ({ userId: doc.data().userId })));
+        if (user) {
+            const data = await getDocs(likesDoc);
+            setLikes(data.docs.map((doc) => ({ userId: doc.data().userId })));
+        }
     };
 
     const addLike = async () => {
@@ -92,7 +95,7 @@ export const Post = ({ post, deletePost }) => {
                 </button>
                 {likes.length > 0 && <p>Likes: {likes.length}</p>}
                 {user && user.uid === post.userId && (
-                    <button  onClick={() => handleDeletePost(post.id)} className="delete-button">Delete Post</button>
+                    <button onClick={() => handleDeletePost(post.id)} className="delete-button">Delete Post</button>
                 )}
             </div>
         </div>

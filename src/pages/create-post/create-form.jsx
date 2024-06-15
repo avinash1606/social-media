@@ -2,10 +2,11 @@
 import {useForm} from 'react-hook-form';
 import * as yup from 'yup';
 import {yupResolver } from "@hookform/resolvers/yup";
-import {addDoc,collection} from 'firebase/firestore';
+
 import {useNavigate}from 'react-router-dom'
 import {auth,db} from "../../config/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import {addDoc,collection} from 'firebase/firestore';
 
 import '../../App.css';
 
